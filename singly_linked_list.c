@@ -1,8 +1,7 @@
-/* SYSC 2006 Lab 8
+/*
    A module that implements a singly-linked list of integers. 
 
    Author: Zakariya Khan 
-   Student No: 101186641
  */
 
 #include <assert.h>  // assert
@@ -11,10 +10,6 @@
 #include <stdio.h>   // printf
 
 #include "singly_linked_list.h"
-
-/*************************************************************
- * Functions presented in lectures.
- *************************************************************/
 
 /* Return a pointer to a new intnode_t (a node in a singly-linked list).
 
@@ -32,6 +27,7 @@ intnode_t *intnode_construct(int value, intnode_t *next)
     p->next = next;
     return p;
 }
+
 /* Parameter head points to the first node in a linked list, or is NULL
    if the linked list is empty. Insert a node containing the specified 
    integer value at the front of the linked list, and return a pointer to 
@@ -91,14 +87,6 @@ void print_list(intnode_t *head)
     printf("%d", curr->value);
 }
 
-
-
-/*****************************************************************
- * Solutions to Lab 8
- *****************************************************************/
-
-// Exercise 1
-
 /* Parameter head points to the first node in a linked list, or is
  * NULL if the list is empty.
  *
@@ -119,8 +107,6 @@ int count(intnode_t *head, int target)
     return count;
 } 
 
-// Exercise 2
-
 /* Parameter head points to the first node in a linked list, or is
  * NULL if the list is empty.
  *
@@ -140,9 +126,6 @@ int max(intnode_t *head)
 	}
     return maximum;
 }
-
-
-// Exercise 3
 
 /* Parameter head points to the first node in a linked list, or is
  * NULL if the list is empty.
@@ -166,9 +149,6 @@ int index(intnode_t *head, int target)
 		
     return -1;
 }
-
-
-// Exercise 4
 
 /* Parameter head points to the first node in a linked list, or is
  * NULL if the list is empty.
@@ -200,10 +180,6 @@ void extend(intnode_t *head, intnode_t *other)
 	}
 }
 		
-
-
-// Exercise 5
-
 /* Parameter head points to the first node in a linked list, or is
  * NULL if the list is empty.
  *
